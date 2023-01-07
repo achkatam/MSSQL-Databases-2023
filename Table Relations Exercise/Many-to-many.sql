@@ -1,14 +1,14 @@
 CREATE TABLE [Students](
 	[StudentID] INT PRIMARY KEY IDENTITY,
-	[Name] NVARCHAR(30) NOT NULL
+	[Name] NVARCHAR(40) NOT NULL
 )
 
 CREATE TABLE [Exams](
 	[ExamID] INT PRIMARY KEY IDENTITY(101,1),
-	[Name] NVARCHAR(90)
+	[Name] NVARCHAR(70) NOT NULL
 )
 
-CREATE TABLE [StudentsExam](
+CREATE TABLE [StudentsExams](
 	[StudentID] INT FOREIGN KEY REFERENCES [Students]([StudentID]),
 	[ExamID] INT FOREIGN KEY REFERENCES [Exams]([ExamID]),
 	PRIMARY KEY([StudentID], [ExamID])
@@ -20,17 +20,13 @@ INSERT INTO [Students]([Name])
 ('Toni'),
 ('Ron')
 
-
-
 INSERT INTO [Exams]([Name])
 	VALUES
 ('SpringMCV'),
 ('Neo4j'),
 ('Oracle 11g')
 
-
-
-INSERT INTO [StudentsExam]([StudentID], [ExamID])
+INSERT INTO [StudentsExams]([StudentID], [ExamID])
 	VALUES
 (1,101),
 (1,102),
@@ -44,4 +40,4 @@ FROM [Students]
 SELECT *
 FROM [Exams]
 SELECT *
-FROM [StudentsExam]
+FROM [StudentsExams]
