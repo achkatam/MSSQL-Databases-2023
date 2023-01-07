@@ -26,6 +26,8 @@ CREATE TABLE [Items](
 	[ItemTypeID] INT FOREIGN KEY REFERENCES [Itemtypes]([ItemTypeId]) NOT NULL
 )
 
+--before submitting in judge make sure to rename OrderID 
+
 CREATE TABLE [OrderItems](
 	[OrderId] INT FOREIGN KEY REFERENCES [Orders]([OrderID]),
 	[ItemID] INT FOREIGN KEY REFERENCES [Items]([ItemID]),
@@ -34,4 +36,6 @@ CREATE TABLE [OrderItems](
 
 
 EXEC sp_rename 'OrderItems.OrderId', 'OrderID', 'COLUMN'
+
+
 
