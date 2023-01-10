@@ -1,3 +1,10 @@
+--Problem 12.	Countries Holding 'A' 3 or More Times
+SELECT c.CountryName AS [Country name]
+	,c.IsoCode AS [ISO Code]
+FROM [Countries] AS c
+WHERE LOWER(c.CountryName) LIKE '%a%a%a%'
+ORDER BY c.IsoCode
+
 --Problem 13.	 Mix of Peak and River Names
 SELECT 
 	P.PeakName 
@@ -31,8 +38,9 @@ FROM [Users]
 ORDER BY [Email Provider], [Username]
 
 --Problem 16.	 Get Users with IPAdress Like Pattern
-SELECT [IpAddress]
-FROM [Users]
+SELECT u.Username,
+	u.[IpAddress] AS [IP Address]	
+FROM [Users] AS u
 WHERE [IpAddress] LIKE '___.1%.%.___'
 ORDER BY [Username]
 
