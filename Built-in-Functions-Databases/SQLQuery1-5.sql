@@ -19,7 +19,6 @@ WHERE e.LastName LIKE '%ei%'
 --Problem 3.	Find First Names of All Employees
 SELECT 
 	e.FirstName
-	,e.DepartmentID
 FROM [Employees] AS e
 WHERE e.DepartmentID IN (3,10)
 AND  DATEPART(YEAR,e.HireDate) BETWEEN 1995 AND 2005
