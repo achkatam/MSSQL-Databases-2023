@@ -12,4 +12,5 @@ Database module MSSQL, part of SoftUni Courses
 ### 2.[CRUD](https://github.com/achkatam/MSSQL-Databases-2023/tree/main/CRUD%20Exercise)
 ### 3.[Table Relations](https://github.com/achkatam/MSSQL-Databases-2023/tree/main/Table%20Relations%20Exercise)
 ### 4.[Built-in Functions](https://github.com/achkatam/MSSQL-Databases-2023/tree/main/Built-in-Functions-Databases)
+### 5.[Subqueries and Joins](https://github.com/achkatam/MSSQL-Databases-2023/tree/main/Subqueries%20and%20Joins)
 </details>
