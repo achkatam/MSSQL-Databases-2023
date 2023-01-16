@@ -9,7 +9,7 @@ BEGIN
 	WHILE (@Index <= @wordLength)
 	BEGIN
 		SET @currLetter = SUBSTRING(@word, @Index, 1)
-	-- CHARINDEX looks for the expression @currLetter if it presents into @setOfLetters expression
+	-- CHARINDEX checks for the expression @currLetter if it presents into @setOfLetters expression
 		
 		IF (CHARINDEX(@currLetter, @setOfLetters) = 0)
 		BEGIN
