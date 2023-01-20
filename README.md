@@ -15,4 +15,5 @@ Database module MSSQL, part of SoftUni Courses
 ### 5.[Subqueries and Joins](https://github.com/achkatam/MSSQL-Databases-2023/tree/main/Subqueries%20and%20Joins)
 ### 6.[Indices and Data Aggregation](https://github.com/achkatam/MSSQL-Databases-2023/tree/main/Indices%20and%20Data%20Aggregation)
 ### 7.[Functions and Stored Procedures](https://github.com/achkatam/MSSQL-Databases-2023/tree/main/Functions%20And%20Stored%20Procedures)
+### 8.[Exam practice](https://github.com/achkatam/MSSQL-Databases-2023/tree/main/Exam%20Practice)
 </details>
