@@ -2,8 +2,8 @@ SELECT
 	CASE 
 		WHEN e.Id IS NULL THEN 'None'
 		ELSE
-	CONCAT(e.FirstName, ' ', e.LastName) 
-	END AS Employee,
+	   CONCAT(e.FirstName, ' ', e.LastName) 
+	 END AS Employee,
 	ISNULL(d.[Name], 'None') AS Department,
 	c.[Name],
 	r.[Description],
