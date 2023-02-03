@@ -6,3 +6,13 @@ BEGIN
 	SET Balance += @MoneyAmount
 	WHERE Id = @AccountId
 END
+
+SELECT Balance 
+FROM Accounts AS a
+WHERE Id = 1 -- 123.12
+
+EXEC usp_DepositMoney 1, 100
+
+SELECT Balance 
+FROM Accounts AS a
+WHERE Id = 1 -- 223.12
